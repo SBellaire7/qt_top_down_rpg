@@ -1,0 +1,10 @@
+void Widget::setupWarp(int x1, int x2, int y1, int y2, std::string fileName, int state)
+{
+    if(player.entity->x() > x1 && player.entity->x() < x2 && player.entity->y() > y1 && player.entity->y() < y2)
+    {
+          //delete currentLevel.tiles;
+          currentLevel = createLevel(fileName);
+          mapState = state;
+
+    }
+}
